@@ -6,7 +6,8 @@ on:
       - master
   schedule:
     - cron: "*/30 * * * *"
-
+permissions:  
+  contents: write
 jobs:
   autogreen:
     runs-on: ubuntu-latest
